@@ -1,31 +1,30 @@
 <div class='card' id='addClimberForm'>
-<div class="card-body">
-	<form action="/hero/add" method="post">
-		<p class= 'closeForm'>close</p>
-		<label>Climber's Name</label>
-		<input class="form-control" id='climberName' name="climberName">
-		<label>climber's Web Page</label>
-		<input class="form-control" id='climberLink' name="climberLink">
-		<button class='btn btn-primary' id='submitButton' type="submit">Submit</button>
-	</form>
+  <div class="card-body">
+  	<form action="/hero/add" method="post">
+  		<p class= 'closeForm'>close</p>
+  		<label>Climber's Name</label>
+  		<input class="form-control" id='climberName' name="climberName">
+  		<label>climber's Web Page</label>
+  		<input class="form-control" id='climberLink' name="climberLink">
+  		<button class='btn btn-primary' id='submitButton' type="submit">Submit</button>
+  	</form>
+  </div>
 </div>
-</div>
+
 <h1>hello world</h1>
-<button type="button" class= "btn btn-primary" id="addClimber">add your climbing hero!!!</button>
+
+<button type="button" class= "btn btn-primary" id="addClimber">Add your climbing hero!!!</button>
+
 {{#each hero}}
 <div class="container-fluid">
 	<div class="card">
 		<div class="card-body">
-
-
-  <h2>{{name}}</h2>
-  <a href="{{link}}" target="_blank"><h3>{{link}}</h3></a>
-
-<button type="button" name="upvote">&#8593;</button>
-  {{votes}}
-<button type="button" name="downvote">&#8595;</button>
-
-</div>
-</div>
+      <h2>{{name}}</h2>
+      <a href="{{link}}" target="_blank"><h3>{{link}}</h3></a>
+      <button type="button" name="upvote">&#8593;</button>
+        {{votes}}
+      <button type="button" name="downvote">&#8595;</button>
+    </div>
+  </div>
 </div>
 {{/each}}

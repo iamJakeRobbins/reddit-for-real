@@ -12,4 +12,3 @@ let closeForm = document.getElementsByClassName('closeForm')[0]
 closeForm.addEventListener('click', event => {
 	climberForm.style.display = 'none'
 })
- 
